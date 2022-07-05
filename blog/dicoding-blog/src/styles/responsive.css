@@ -1,0 +1,75 @@
+.posts {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  #drawer {
+    width: 240px;
+    height: 100%;
+    position: absolute;
+
+    /* menyembunyikan #drawer -250px (sesuai dengan ukuran lebar drawer) ke kiri */
+    transform: translate(-250px, 0);
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(246, 250, 251);
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .nav__item {
+    margin-top: 30px;
+  }
+}
+
+/* Hamburger menu */
+
+@media screen and (max-width: 600px) {
+  button {
+    width: 25px;
+    font-size: 20px;
+    position: absolute;
+    font-size: 22px;
+    opacity: 2;
+    margin-left: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  button:focus {
+    background-color: white;
+  }
+  #drawer.slide {
+    transform: translate(0, 0);
+  }
+}
+
+/* ------------------------------------- */
+
+@media screen and (min-width: 700px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .headline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+  .post-item {
+    width: 90%;
+  }
+}

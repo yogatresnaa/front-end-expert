@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3 1fr);
+      }
+
+      /* styling pendukung */
+      .wrapper div {
+        border: 1px dashed black;
+        padding: 16px;
+        background-color: aquamarine;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>Satu</div>
+      <div>Dua</div>
+      <div>Tiga</div>
+      <div>Empat</div>
+      <div>Lima</div>
+      <div>Enam</div>
+      <div>tujuh</div>
+      <div>delapan</div>
+    </div>
+  </body>
+</html>
